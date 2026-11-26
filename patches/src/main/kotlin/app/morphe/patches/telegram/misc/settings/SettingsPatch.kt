@@ -712,6 +712,7 @@ internal fun BytecodePatchContext.resolveNativeSettings(): NativeSettingsPlan? {
             return-void
         """)
     }
+}
     // The row leads the account block, ahead of Account. While Telegram 13.0's Wallet row is new it
     // sits above with its own divider, and its skips land on Account's first instruction (on the Play
     // build, one hoisted constant before it, which runs into it); that label moves to the bridge call,
@@ -859,8 +860,8 @@ val settingsPatch = bytecodePatch(
     // Sign-in help, the passkey gate and the dialogs' theme ride along here because every selection
     // carries this patch, the default one that issue #11 patched with included. The chat list
     // title's long press is optional and says so itself when Telegram's chat list changes shape.
-    dependsOn(telegramExtensionPatch, settingsManifestPatch, signInHelpPatch, passkeyGatePatch, appThemePatch,
-        chatListTitlePressPatch)
+    dependsOn(telegramExtensionPatch, settingsManifestPatch, signInHelpPatch, passkeyGatePatch, appThemePatch
+        /* , chatListTitlePressPatch */)
     compatibleWith(*AppCompatibilities.telegram())
 
     execute {
@@ -893,7 +894,7 @@ val settingsPatch = bytecodePatch(
         // shortcut above could end up last, where a launcher that shows only a few cuts it off.
         // Each of those calls now goes through the extension, which puts it back in front
         // afterwards. Framework names only, which the obfuscator keeps.
-        rerouteShortcutCalls()
+        // rerouteShortcutCalls()
         if (native == null) {
             patchLog.warning("HushTelegram settings: native self-settings row is unavailable. " +
                 "The launcher shortcut and Android App info entry remain available.")
