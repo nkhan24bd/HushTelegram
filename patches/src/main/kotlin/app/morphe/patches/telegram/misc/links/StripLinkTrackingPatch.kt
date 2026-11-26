@@ -15,6 +15,7 @@ import app.morphe.patches.telegram.misc.extension.telegramExtensionPatch
 import app.morphe.patches.telegram.misc.settings.settingsPatch
 import app.morphe.util.addInstructionsAtControlFlowLabel
 
+/*
 @Suppress("unused")
 val stripLinkTrackingPatch = bytecodePatch(
     name = "Strip link tracking",
@@ -76,3 +77,4 @@ val stripLinkTrackingPatch = bytecodePatch(
         pastes = null
     }
 }
+*/
