@@ -14,6 +14,7 @@ import app.morphe.patches.telegram.misc.extension.telegramExtensionPatch
 import app.morphe.patches.telegram.misc.settings.settingsPatch
 import app.morphe.util.addInstructionsAtControlFlowLabel
 
+/*
 @Suppress("unused")
 val openExternalLinksPatch = bytecodePatch(
     name = "Open links externally",
@@ -46,3 +47,4 @@ val openExternalLinksPatch = bytecodePatch(
         enableStatus("openExternalLinks")
     }
 }
+*/
