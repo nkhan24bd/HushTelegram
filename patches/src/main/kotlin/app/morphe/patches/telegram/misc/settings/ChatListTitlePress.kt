@@ -29,6 +29,7 @@ import app.morphe.util.names.origReturnType
 import app.morphe.util.names.origType
 import app.morphe.util.names.tgMutableClassDefBy
 
+/*
 private const val VIEW = "Landroid/view/View;"
 private const val CONTEXT = "Landroid/content/Context;"
 private const val TEXT = "Ljava/lang/CharSequence;"
@@ -128,3 +129,4 @@ private fun Instruction.reference(): String? = origRef()?.takeIf { "->" in it &&
 private fun Method.body() = implementation?.instructions?.toList().orEmpty()
 private fun titleShape(valid: Boolean, reason: String) { if (!valid) refuseTitle(reason) }
 private fun refuseTitle(reason: String): Nothing = throw PatchException("chat list title: $reason")
+*/
