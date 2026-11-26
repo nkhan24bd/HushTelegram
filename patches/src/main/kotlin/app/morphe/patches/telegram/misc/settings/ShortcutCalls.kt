@@ -25,6 +25,7 @@ import app.morphe.util.names.origReturnType
 import app.morphe.util.names.origType
 import app.morphe.util.names.tgMutableClassDefBy
 
+/*
 internal const val SHORTCUT_MANAGER = "Landroid/content/pm/ShortcutManager;"
 
 /**
@@ -114,3 +115,4 @@ internal fun BytecodePatchContext.rerouteShortcutCalls(): Int {
     }
     return callers.sumOf { type -> tgMutableClassDefBy(type).methods.sumOf { it.rerouteShortcutCalls() } }
 }
+*/
