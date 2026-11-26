@@ -23,6 +23,7 @@ import app.morphe.util.names.tgFingerprint
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.ClassDef
 
+/*
 private const val PATCH = "Disable update checks"
 
 /**
@@ -134,3 +135,4 @@ val disableUpdateChecksPatch = bytecodePatch(
         enableStatus("disableUpdateChecks")
     }
 }
+*/
